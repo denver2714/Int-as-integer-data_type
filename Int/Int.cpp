@@ -1,7 +1,8 @@
 #include <iostream>
 #include "Int.h"
 
-Int::Int(int rhs = 1) :value(rhs) {}
+Int::Int() : value(1) {}
+Int::Int(int rhs) :value(rhs) {}
 
 Int operator+(const Int& number1, const Int& number2) {
     Int final = 0;
