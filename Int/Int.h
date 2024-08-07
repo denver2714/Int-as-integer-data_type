@@ -45,7 +45,6 @@ public:
     ~Int();
 };
 
-// Definition of template function
 template<typename... Args>
 void ptr_deleter(Int* first, Args... args) {
     delete first;
